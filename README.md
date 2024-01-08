@@ -18,3 +18,9 @@ Installation
 - Setup Virtual Device
   1. Android : Preview Flutter apps on virtual Android devices
   2. ios : Preview Flutter apps on virtual ios devices
+ 
+VS Code : install flutter extension
+
+Create App:
+flutter create first_app
+  
