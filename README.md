@@ -16,5 +16,14 @@ Installation
   1. Android Studio : Use by Flutter SDK & needed for Android app development.
   2. XCode : Use by Flutter SDK & needed for IOS app development.
 - Setup Virtual Device
+
   1. Android : Preview Flutter apps on virtual Android devices
   2. ios : Preview Flutter apps on virtual ios devices
+
+  run
+
+  1. flutter run
+
+Material Design:
+Flutter apps by default uses material design. : Googles favourite design system.
+Foundation on which we can apply our own style.
