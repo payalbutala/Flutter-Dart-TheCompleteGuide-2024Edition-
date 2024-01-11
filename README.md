@@ -25,5 +25,12 @@ Installation
   1. flutter run
 
 Material Design:
-Flutter apps by default uses material design. : Googles favourite design system.
-Foundation on which we can apply our own style.
+
+1. Flutter apps by default uses material design. : Googles favourite design system.
+   Foundation on which we can apply our own style.
+
+VS Code : install flutter extension
+
+Create App:
+
+1. flutter create first_app
