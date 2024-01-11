@@ -2,6 +2,11 @@
 import 'package:flutter/material.dart';
 import 'package:first_app/gradient_container.dart';
 
+// const List<Color> colors = [
+//   Color.fromARGB(255, 33, 243, 47),
+//   Color.fromARGB(255, 239, 228, 22)
+// ]; Way1
+
 // function defination
 // main function name // void : return type // {} : function body
 // No need to call main() function to execute as it is a main entry point of an app.
@@ -21,9 +26,9 @@ void main() {
       // CORE widget provided by flutter - as a starting point, helps to setup overall app
       // scaffold : helps to setup good looking screens in app, inside MaterialApp
       home: Scaffold(
-        // backgroundColor: Color.fromARGB(255, 81, 32, 167),
-        body: GradientContainer(),
-      ),
+          // backgroundColor: Color.fromARGB(255, 81, 32, 167),
+          // body: GradientContainer(colors: colors), // Way1
+          body: GradientContainer(Colors.brown, Colors.black)),
     ),
   );
 }

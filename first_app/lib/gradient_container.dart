@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:first_app/styled_text.dart';
 
+const startAlignment = Alignment.topLeft;
+const endAlignment = Alignment.bottomRight;
+
 // widgets are objects(DS in memory), defining custom widgets as classes
 // its all about objects which are built based on classes
 // class : creating class, in Caps each letter on caps
@@ -12,7 +15,14 @@ class GradientContainer extends StatelessWidget {
   // super : refers to parent class eg: StatelessWidget
   // key : needs to forward to stateless widget, extending StatelessWidget wants key argument.
   // this will pass key to super
-  const GradientContainer({super.key});
+
+  // const GradientContainer({super.key, required this.colors}); // Way1
+  const GradientContainer(this.color1, this.color2, {super.key});
+
+  // final List<Color> colors; // Way1
+
+  final Color color1;
+  final Color color2;
 
   // class logic start
   // overwriting a method that is expected by StatelessWidget - extra metadata/annotation adding to method
@@ -23,18 +33,21 @@ class GradientContainer extends StatelessWidget {
     // Widget is return type
     // var color = Colors.deepPurple;
     return Container(
-      decoration: const BoxDecoration(
+      decoration: BoxDecoration(
         gradient: LinearGradient(
-          colors: [
-            Colors.deepPurple,
-            Colors.deepOrangeAccent,
-          ],
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
+          // colors: colors // Way1
+          colors: [color1, color2]
+          // colors[0],
+          // colors[1]
+          // color1,
+          // color2,
+          ,
+          begin: startAlignment,
+          end: endAlignment,
         ),
       ),
       child: const Center(
-        child: StyledText(),
+        child: StyledText('Hello Payali!!!'),
       ),
     );
   }
