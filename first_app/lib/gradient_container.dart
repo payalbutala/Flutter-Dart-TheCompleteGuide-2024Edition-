@@ -1,5 +1,6 @@
+import 'package:first_app/dice_roller.dart';
 import 'package:flutter/material.dart';
-import 'package:first_app/styled_text.dart';
+// import 'package:first_app/styled_text.dart';
 
 const startAlignment = Alignment.topLeft;
 const endAlignment = Alignment.bottomRight;
@@ -47,8 +48,10 @@ class GradientContainer extends StatelessWidget {
         ),
       ),
       child: const Center(
-        child: StyledText('Hello Payali!!!'),
-      ),
+          // child: StyledText('Hello Payali!!!'),
+          // if you want to use images form assets OR locally stored images
+          // Column : vertically top align, horz center align
+          child: DiceRoller()),
     );
   }
 }
